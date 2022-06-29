@@ -14,7 +14,7 @@
   </head>
   <body>
     <h1>페이지</h1>
-    <h2>선택한 요소는 ?</h2>
+    <h2 id="result">선택한 요소는 ?</h2>
     <div style="width: 900px; height: 900px">
       <canvas id="myChart"></canvas>
     </div>
@@ -60,14 +60,25 @@
         data: data,
         options: {
           onClick: (e, i) => {
-            let indext = i[0].index;
-            console.log(e.chart.data.datasets[0].data[indext]);
+            try {
+              let idx = i[0].index;
+              console.log(e.chart.data.datasets[0].data[idx]);
+              testFunction(idx);
+            } catch (e) {
+              console.log("잘못클릭하셨습니다.");
+            }
             // console.log(e.chart.data.datasets.data[1]);
           },
         },
       };
 
       const myChart = new Chart(document.getElementById("myChart"), config);
+      const testFunction = (index) => {
+        console.log("헬로우");
+        console.log(obj[index]);
+        const element = document.getElementById("result");
+        element.innerText = JSON.stringify(obj[index]);
+      };
     </script>
   </body>
 </html>
