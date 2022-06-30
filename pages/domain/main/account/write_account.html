@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soda :: 가계부작성</title>
+    <link rel="stylesheet" href="../../../../src/css/reset.css">
+    <link rel="stylesheet" href="../../../../src/css/common.css">
+    <link rel="stylesheet" href="../../../../src/css/style.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="write_account_wrap">
+        <div class="input_wrap">
+            <p class="ko sub-title-16">날짜</p>
+            <ul>
+                <li>
+                    <input name="year" type="text" 
+                    placeholder="년" onfocus="this.placeholder=''" onblur="this.placeholder='년'"
+                    class="input-center">
+                </li>
+                <li>
+                    <input name="month" type="text" 
+                    placeholder="월" onfocus="this.placeholder=''" onblur="this.placeholder='월'" 
+                    class="input-center">
+                </li>
+                <li>
+                    <input name="day" type="text"
+                    placeholder="일" onfocus="this.placeholder=''" onblur="this.placeholder='일'"
+                    class="input-center">
+                </li>
+            </ul>
+        </div>
+        <div class="input_wrap">
+            <p class="ko sub-title-16">내용</p>
+            <input name="title" type="text"
+            placeholder="지출내역을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='지출내역을 입력하세요.'">
+            <!-- <div class="button_wrap">
+                <ul class="btn_check_over">
+                    <li>고정 지출</li>
+                    <li>초과 지출</li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="input_wrap">
+            <p class="ko sub-title-16">금액</p>
+            <input name="title" type="text"
+            placeholder="금액을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='금액을 입력하세요.'">
+        </div>
+        <div class="input_wrap">
+            <p class="ko sub-title-16">자산</p>
+            <input name="title" type="text"
+            placeholder="결제수단을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='결제수단을 입력하세요.'">
+        </div>
+        <div class="input_wrap">
+            <p class="ko sub-title-16">카테고리</p>
+            <input name="title" type="text"
+            placeholder="결제내역 카테고리를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='결제내역 카테고리를 입력하세요.'">
+        </div>
+        <div class="input_wrap">
+            <p class="ko sub-title-16">메모</p>
+            <input name="title" type="text"
+            placeholder="결제내역 카테고리를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='결제내역 카테고리를 입력하세요.'">
+        </div>
+        <div class="button_wrap">
+            <button class="btn_main">등록하기</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
