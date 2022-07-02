@@ -6,3 +6,6 @@
 
 /*================가계부 작성 페이지================*/
 .write_account_wrap{}
+/*================카테고리 수정 페이지================*/
+.modify_category_wrap{}
+.modify_category_wrap >div{ margin-bottom: 16px;}
