@@ -23,6 +23,7 @@
 /*===인풋버튼===*/
 /*인풋-요소*/
 input:focus{ border: 1px solid #5399FF; box-shadow: 0 0 0 1px #5399FF inset; box-sizing: border-box; color: #5399FF; font-weight: bold;}
+textarea:focus{border: 1px solid #5399FF; box-shadow: 0 0 0 1px #5399FF inset; box-sizing: border-box; color: #5399FF; font-weight: bold;}
 /*인풋-컴포넌트*/
 .input-center{text-align: center;} /*center는 숫자입력받는 인풋요소*/
 .input_wrap{ margin-bottom: 32px;}
@@ -30,13 +31,34 @@ input:focus{ border: 1px solid #5399FF; box-shadow: 0 0 0 1px #5399FF inset; box
 .input_wrap ul{ display: flex;}
 .input_wrap ul li{ width: 33%; box-sizing: border-box;}
 .input_wrap ul li:not(:last-child){margin-right: 12px;}
+/*textarea-요소*/
+
+/*======================Elements======================*/
+.icon{display: inline-block; width: 32px; height: 32px; text-indent: -9999px; padding: 4px; background-size: 32px 32px;}
+.icon_write{background: url(../images/icon_write.svg);}
+.icon_plus{background: url(../images/icon_plus.svg);}
+/*======================Modal======================*/
+.bg{ z-index: 100; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0,0,0,.6);}
+.modal_wrap{ z-index: 300; position: absolute; bottom: 0; left: 0; right: 0; background-color: #fff; border-radius: 32px 32px 0 0; padding: 50px 20px 0 20px;}
+.modal_wrap:before{ position: absolute; top: 20px; left: 50%; transform: translateX(-50%); content: ""; clear: both; display: block; width: 3rem; height: 5px; border-radius: 16px; background-color: #E5E7E8;}
+.modal_top{ display: flex; justify-content: space-between; align-items: center;}
+.modal_conts{margin: 32px 0 40px 0; display: flex; flex-wrap: wrap;}
+.modal_conts .select_box{ margin: 0 2% 2% 0; position: relative; width: 23%; border: 1px solid #eee; box-sizing: border-box; border-radius: 14%; cursor: pointer;}
+.modal_conts .select_box:nth-child(4n+0){ margin-right: 0;}
+.modal_conts .select_box.active{ background: #5399FF;}
+.modal_conts .select_box.active .select_cont{ color:#fff;}
+.modal_conts .select_box:before { content: ""; display: block; padding-top: 100%; /* 1:1 비율 */}
+.modal_conts .select_box .select_cont{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 14px;}
+.modal_conts .select_box.cont_plus{ border:  dashed 2px #eee;}
+
 /*==========================Top_appbar Page==========================*/
 .top_app_bar_wrap{ height: 56px; padding: 0 20px; border-bottom: 1px solid #eee;}
 .top_app_bar_wrap .inner{ position: relative;}
 .top_app_bar_wrap .inner .cont_left{ display: flex; align-items: center; height: 56px;}
 .top_app_bar_wrap .inner .cont_left .page_name{ font-weight: 400;}
-.direction_icon{ margin-right: 8px; display: inline-block; width: 32px; height: 32px; text-indent: -9999px; padding: 4px;
-                background: url(../images/icon_arrow_close.svg) no-repeat; background-size: 32px 32px;}
-.direction_icon.direction_back{}
-.direction_icon.direction_close{}
+
+.direction_icon{ margin-right: 8px; background: url(../images/icon_arrow_close.svg) no-repeat; }
+.direction_back{ background: url(../images/icon_arrow_back.svg);}
+.direction_close{ background: url(../images/icon_arrow_close.svg);}
+
 /*==========================Bottom_nav Page==========================*/
