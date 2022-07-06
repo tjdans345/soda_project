@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soda :: 가계부작성</title>
-    <link rel="stylesheet" href="../../../../src/css/reset.css">
-    <link rel="stylesheet" href="../../../../src/css/common.css">
-    <link rel="stylesheet" href="../../../../src/css/style.css">
+    <link rel="stylesheet" href="../../../../src/css/reset.css" />
+    <link rel="stylesheet" href="../../../../src/css/common.css" />
+    <link rel="stylesheet" href="../../../../src/css/style.css" />
     <script src="../../../../src/js/common/common.js"></script>
-</head>
-<body>
-<div class="wrap">
-    <div class="page_wrap write_account_wrap">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="page_wrap write_account_wrap">
         <div class="input_wrap">
-            <p class="ko sub-title-16">날짜</p>
-            <ul>
-                <li>
-                    <input name="year" type="text" placeholder="년"
-                    class="input-center">
-                </li>
-                <li>
-                    <input name="month" type="text" 
-                    placeholder="월" onfocus="this.placeholder=''" onblur="this.placeholder='월'" 
-                    class="input-center">
-                </li>
-                <li>
-                    <input name="day" type="text"
-                    placeholder="일" onfocus="this.placeholder=''" onblur="this.placeholder='일'"
-                    class="input-center">
-                </li>
-            </ul>
+          <p class="ko sub-title-16">날짜</p>
+          <ul>
+            <li>
+              <input
+                name="year"
+                type="text"
+                placeholder="년"
+                class="input-center"
+              />
+            </li>
+            <li>
+              <input
+                name="month"
+                type="text"
+                placeholder="월"
+                onfocus="this.placeholder=''"
+                onblur="this.placeholder='월'"
+                class="input-center"
+              />
+            </li>
+            <li>
+              <input
+                name="day"
+                type="text"
+                placeholder="일"
+                onfocus="this.placeholder=''"
+                onblur="this.placeholder='일'"
+                class="input-center"
+              />
+            </li>
+          </ul>
         </div>
         <div class="input_wrap">
-            <p class="ko sub-title-16">내용</p>
-            <input name="title" type="text"
-            placeholder="지출내역을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='지출내역을 입력하세요.'">
-            <!-- <div class="button_wrap">
+          <p class="ko sub-title-16">내용</p>
+          <input
+            name="title"
+            type="text"
+            placeholder="지출내역을 입력하세요."
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='지출내역을 입력하세요.'"
+          />
+          <!-- <div class="button_wrap">
                 <ul class="btn_check_over">
                     <li>고정 지출</li>
                     <li>초과 지출</li>
@@ -44,74 +63,99 @@
             </div> -->
         </div>
         <div class="input_wrap">
-            <p class="ko sub-title-16">금액</p>
-            <input name="price" type="text"
-            placeholder="금액을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='금액을 입력하세요.'">
+          <p class="ko sub-title-16">금액</p>
+          <input
+            name="price"
+            type="text"
+            placeholder="금액을 입력하세요."
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='금액을 입력하세요.'"
+          />
         </div>
         <div class="input_wrap">
-            <p class="ko sub-title-16">자산</p>
-            <input name="payment" type="text"
-            placeholder="결제수단을 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='결제수단을 입력하세요.'">
+          <p class="ko sub-title-16">자산</p>
+          <input
+            name="payment"
+            type="text"
+            placeholder="결제수단을 입력하세요."
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='결제수단을 입력하세요.'"
+          />
         </div>
         <div class="input_wrap">
-            <p class="ko sub-title-16">카테고리</p>
-            <input name="category" type="text"
-            placeholder="결제내역 카테고리를 입력하세요." onfocus="this.placeholder=''" onblur="this.placeholder='결제내역 카테고리를 입력하세요.'">
+          <p class="ko sub-title-16">카테고리</p>
+          <input
+            name="category"
+            type="text"
+            placeholder="결제내역 카테고리를 입력하세요."
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='결제내역 카테고리를 입력하세요.'"
+          />
         </div>
         <div class="input_wrap">
-            <p class="ko sub-title-16">메모</p>
-            <textarea name="memo" id="" cols="30" rows="10" placeholder="해당지출에 관한 메모를 해보세요." onfocus="this.placeholder=''" onblur="this.placeholder='해당지출에 관한 메모를 해보세요.'"></textarea>
+          <p class="ko sub-title-16">메모</p>
+          <textarea
+            name="memo"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="해당지출에 관한 메모를 해보세요."
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='해당지출에 관한 메모를 해보세요.'"
+          ></textarea>
         </div>
         <div class="button_wrap">
-            <button class="btn_main">등록하기</button>
+          <button class="btn_main">등록하기</button>
         </div>
-    </div>
-    <div class="modal_wrap">
+      </div>
+
+      <div class="modal_wrap">
         <div class="modal_top">
-            <a href="#" class="icon direction_icon direction_close">취소하기</a>
-            <p class="page_name ko sub-title-16">카테고리 선택</p>
-            <a href="modify_category.html" class="icon icon_write">작성하기</a>
+          <a href="#" class="icon direction_icon direction_close">취소하기</a>
+          <p class="page_name ko sub-title-16">카테고리 선택</p>
+          <a href="modify_category.html" class="icon icon_write">작성하기</a>
         </div>
         <div class="modal_conts">
-                <div class="select_box">
-                    <p class="select_cont">생활비</p>
-                </div>
-                <div class="select_box active">
-                    <p class="select_cont">식비</p>
-                </div>
-                <div class="select_box">
-                    <p class="select_cont">정기결제</p>
-                </div>
-                <div class="select_box">
-                    <p class="select_cont">관리비</p>
-                </div>
-                <div class="select_box">
-                    <p class="select_cont">문화생활</p>
-                </div>
-                <div class="select_box">
-                    <p class="select_cont">모임비</p>
-                </div>
-                <div class="select_box">
-                    <p class="select_cont">경조사,회비,회사관련</p>
-                </div>
-                <div class="select_box">
-                    <p class="select_cont">취미</p>
-                </div>
-                <div class="select_box">
-                    <p class="select_cont">운동</p>
-                </div>
-                <div class="select_box cont_plus">
-                    <p class="select_cont"><a href="#" class="icon icon_plus">추가하기</a></p>
-                </div>
+          <div class="select_box">
+            <p class="select_cont">생활비</p>
+          </div>
+          <div class="select_box active">
+            <p class="select_cont">식비</p>
+          </div>
+          <div class="select_box">
+            <p class="select_cont">정기결제</p>
+          </div>
+          <div class="select_box">
+            <p class="select_cont">관리비</p>
+          </div>
+          <div class="select_box">
+            <p class="select_cont">문화생활</p>
+          </div>
+          <div class="select_box">
+            <p class="select_cont">모임비</p>
+          </div>
+          <div class="select_box">
+            <p class="select_cont">경조사,회비,회사관련</p>
+          </div>
+          <div class="select_box">
+            <p class="select_cont">취미</p>
+          </div>
+          <div class="select_box">
+            <p class="select_cont">운동</p>
+          </div>
+          <div class="select_box cont_plus">
+            <p class="select_cont">
+              <a href="#" class="icon icon_plus">추가하기</a>
+            </p>
+          </div>
         </div>
         <div class="modal_bottom">
-            <div class="button_wrap">
-                <button class="btn_main">선택하기</button>
-            </div>
+          <div class="button_wrap">
+            <button class="btn_main">선택하기</button>
+          </div>
         </div>
+      </div>
+      <div class="bg"></div>
     </div>
-    <div class="bg"></div>
-</div>
-
-</body>
+  </body>
 </html>
