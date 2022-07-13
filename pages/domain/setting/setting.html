@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soda :: 설정</title>
+    <link rel="stylesheet" href="../../../src/css/common.css">
+    <link rel="stylesheet" href="../../../src/css/reset.css">
+    <link rel="stylesheet" href="../../../src/css/style.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="page_wrap setting_wrap">
+            <div class="set_bg"></div>
+            <h2 class="ko title-24">소다앱을 내맘대로<br>설정해보세요.</h2>
+            <div class="set_button_wrap">
+                <div class="sb_box">
+                    <p class="icon"><img src="../../../src/images/icon_set_goal.svg" alt="세팅아이콘-월간목표"></p>
+                    <p class="txt">월간 소비목표<br>설정</p>
+                </div>
+                <div class="sb_box">
+                    <p class="icon"><img src="../../../src/images/icon_set_category.svg" alt="세팅아이콘-카테고리설정"></p>
+                    <p class="txt">소비 카테고리<br>설정</p>
+                </div>
+                <div class="sb_box">
+                    <p class="icon"><img src="../../../src/images/icon_set_notice.svg" alt="세팅아이콘-월간목표"></p>
+                    <p class="txt">초과 알림비율<br>설정</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal_wrap setting_modal">
+            <div class="modal_top">
+              <p class="page_name ko title-18"><span lang="en" class="en title-20">7</span>월 소비목표 설정</p>
+              <p class="page_memo"><span lang="en">7</span>월 소비 목표를 설정해보세요.</p>
+            </div>
+            <div class="modal_conts">
+             <div class="input_circle">
+                <input
+                name="month_goal"
+                type="text"
+                placeholder="금액을 입력하세요"
+                onfocus="this.placeholder=''"
+                onblur="this.placeholder='금액을 입력하세요'"
+                class="input-center"
+                lang="en"
+              />
+             </div>
+            </div>
+            <div class="modal_bottom">
+              <div class="button_wrap">
+                <button class="btn_main">설정완료</button>
+              </div>
+            </div>
+        </div><!--modal_wrap끝-->
+        <div class="bg"></div>
+    </div><!--wrap-->
+</body>
+</html>

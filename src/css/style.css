@@ -1,11 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
 
-.wrap{ position: relative;}
+.wrap{ position: relative; height: 100%;}
 .page_wrap{padding: 32px 20px 0;}
 
-/*================가계부 작성 페이지================*/
+/*=================가계부 작성 페이지=================*/
 .write_account_wrap{}
 /*================카테고리 수정 페이지================*/
 .modify_category_wrap{}
 .modify_category_wrap >div{ margin-bottom: 16px;}
+.modify_category_wrap .button_wrap{ margin: 50px 0 30px 0;}
+
+/*===================설정 페이지===================*/
+.setting_wrap{}
+.setting_wrap .set_bg{ z-index: -2; position: absolute; top: -80px; right: -90px; width: 240px; height: 240px; background: url(../images/img_bg_setting.svg) no-repeat; background-size: contain;}
+.setting_wrap > h2{ font-weight: 300; margin-bottom: 100px;}
+.setting_wrap .set_button_wrap{ display: flex; flex-wrap: wrap;}
+.setting_wrap .set_button_wrap .sb_box{ margin: 0 4% 6% 0; padding: 50px 0 40px 0; display: flex; flex-direction: column; align-items: center; width: 48%; box-sizing: border-box; border-radius: 16px; cursor: pointer; background-color:#fff; box-shadow:0 6px 16px rgba(0,0,0,.2);}
+.setting_wrap .set_button_wrap .sb_box:nth-child(2n+0){ margin-right: 0;}
+.setting_wrap .set_button_wrap .sb_box .icon{ margin-bottom: 24px; background-color: #fcc;}
+.setting_wrap .set_button_wrap .sb_box .txt{ text-align: center;}
