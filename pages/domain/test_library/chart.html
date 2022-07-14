@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../../../src/css/style.css">
   </head>
   <body>
+
     <div class="wrap">
       <div class="chart_page_wrap">
         <div class="page_title_wrap">
@@ -84,8 +85,9 @@
               "rgb(255, 99, 132)",
               "rgb(54, 162, 235)",
               "rgb(255, 205, 86)",
+              "rgb(255, 150, 86)",
             ],
-            hoverOffset: 20,
+            hoverOffset: 3,
           },
         ],
       };
@@ -99,6 +101,7 @@
               let idx = i[0].index;
               console.log(e.chart.data.datasets[0].data[idx]);
               testFunction(idx);
+              data.datasets.hoverOffset = 100;
             } catch (e) {
               console.log("잘못클릭하셨습니다.");
             }
