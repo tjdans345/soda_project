@@ -69,6 +69,7 @@
               let idx = i[0].index;
               console.log(e.chart.data.datasets[0].data[idx]);
               testFunction(idx);
+              data.datasets.hoverOffset = 100;
             } catch (e) {
               console.log("잘못클릭하셨습니다.");
             }
