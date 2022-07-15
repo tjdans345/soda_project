@@ -11,17 +11,18 @@
       referrerpolicy="no-referrer"
     ></script>
     <title>Soda :: 차트</title>
-    <link rel="stylesheet" href="../../../src/css/common.css">
-    <link rel="stylesheet" href="../../../src/css/reset.css">
-    <link rel="stylesheet" href="../../../src/css/style.css">
+    <link rel="stylesheet" href="/src/css/common.css" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
   </head>
   <body>
-
     <div class="wrap">
       <div class="chart_page_wrap">
         <div class="page_title_wrap">
           <p class="sub_title"><span lang="en">6</span>월 지출내역</p>
-          <h2 class="main_title title-24"><span lang="en" class="big-title-30">12,302,450</span>원</h2>
+          <h2 class="main_title title-24">
+            <span lang="en" class="big-title-30">12,302,450</span>원
+          </h2>
         </div>
         <!-- <h2 id="result">선택한 요소는 ?</h2> -->
         <div class="chart_wrap">
@@ -30,7 +31,10 @@
         <div class="chart_list_wrap">
           <ul>
             <li class="list">
-              <a href="../../domain/main/chart/chart_detail.html" target="_blank">
+              <a
+                href="../../domain/main/chart/chart_detail.html"
+                target="_blank"
+              >
                 <div class="cont_left category">
                   <span lang="en">25%</span>
                   <p class="cate_name">식비</p>
@@ -39,7 +43,10 @@
               </a>
             </li>
             <li class="list">
-              <a href="../../domain/main/chart/chart_detail.html" target="_blank">
+              <a
+                href="../../domain/main/chart/chart_detail.html"
+                target="_blank"
+              >
                 <div class="cont_left">
                   <span lang="en">22%</span>
                   <p class="cate_name">생활용품</p>
@@ -49,11 +56,10 @@
             </li>
           </ul>
         </div>
-      </div><!--chart_page_wrap-->
-    </div><!--wrap-->
-
-
-
+      </div>
+      <!--chart_page_wrap-->
+    </div>
+    <!--wrap-->
 
     <script>
       let obj = [
@@ -79,6 +85,16 @@
       console.log(nameList);
       console.log(priceList);
 
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var gradient = ctx.createLinearGradient(0, 0, 0, 200);
+      gradient.addColorStop(0, "#5399FF");
+      gradient.addColorStop(1, "#44E0C8");
+
+      var gradient2 = ctx.createLinearGradient(0, 0, 0, 330);
+      gradient2.addColorStop(0, "#E53E3E");
+      gradient2.addColorStop(0.5, "#E9503D");
+      gradient2.addColorStop(1, "#FFAB2E");
+
       const data = {
         labels: nameList,
         datasets: [
@@ -86,8 +102,8 @@
             label: "My First Dataset",
             data: priceList,
             backgroundColor: [
-              "rgb(255, 99, 132)",
-              "rgb(54, 162, 235)",
+              gradient,
+              gradient2,
               "rgb(255, 205, 86)",
               "rgb(255, 150, 86)",
             ],
