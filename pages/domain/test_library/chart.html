@@ -11,17 +11,18 @@
       referrerpolicy="no-referrer"
     ></script>
     <title>Soda :: 차트</title>
-    <link rel="stylesheet" href="../../../src/css/common.css">
-    <link rel="stylesheet" href="../../../src/css/reset.css">
-    <link rel="stylesheet" href="../../../src/css/style.css">
+    <link rel="stylesheet" href="../../../src/css/common.css" />
+    <link rel="stylesheet" href="../../../src/css/reset.css" />
+    <link rel="stylesheet" href="../../../src/css/style.css" />
   </head>
   <body>
-
     <div class="wrap">
       <div class="chart_page_wrap">
         <div class="page_title_wrap">
           <p class="sub_title"><span lang="en">6</span>월 지출내역</p>
-          <h2 class="main_title title-24"><span lang="en" class="big-title-30">12,302,450</span>원</h2>
+          <h2 class="main_title title-24">
+            <span lang="en" class="big-title-30">12,302,450</span>원
+          </h2>
         </div>
         <!-- <h2 id="result">선택한 요소는 ?</h2> -->
         <div class="chart_wrap">
@@ -45,11 +46,10 @@
             </li>
           </ul>
         </div>
-      </div><!--chart_page_wrap-->
-    </div><!--wrap-->
-
-
-
+      </div>
+      <!--chart_page_wrap-->
+    </div>
+    <!--wrap-->
 
     <script>
       let obj = [
@@ -87,7 +87,7 @@
               "rgb(255, 205, 86)",
               "rgb(255, 150, 86)",
             ],
-            hoverOffset: 3,
+            hoverOffset: 5,
           },
         ],
       };
@@ -102,9 +102,7 @@
               console.log(e.chart.data.datasets[0].data[idx]);
               testFunction(idx);
               data.datasets.hoverOffset = 100;
-            } catch (e) {
-              console.log("잘못클릭하셨습니다.");
-            }
+            } catch (e) {}
             // console.log(e.chart.data.datasets.data[1]);
           },
         },
