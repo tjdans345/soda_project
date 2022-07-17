@@ -11,9 +11,9 @@
       referrerpolicy="no-referrer"
     ></script>
     <title>Soda :: 차트</title>
-    <link rel="stylesheet" href="../../../src/css/common.css" />
-    <link rel="stylesheet" href="../../../src/css/reset.css" />
-    <link rel="stylesheet" href="../../../src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/common.css" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
   </head>
   <body>
     <div class="wrap">
@@ -31,18 +31,28 @@
         <div class="chart_list_wrap">
           <ul>
             <li class="list">
-              <div class="cont_left category">
-                <span lang="en">25%</span>
-                <p class="cate_name">식비</p>
-              </div>
-              <p class="cont_right price"><span lang="en">312,200</span>원</p>
+              <a
+                href="../../domain/main/chart/chart_detail.html"
+                target="_blank"
+              >
+                <div class="cont_left category">
+                  <span lang="en">25%</span>
+                  <p class="cate_name">식비</p>
+                </div>
+                <p class="cont_right price"><span lang="en">312,200</span>원</p>
+              </a>
             </li>
             <li class="list">
-              <div class="cont_left">
-                <span lang="en">22%</span>
-                <p class="cate_name">생활용품</p>
-              </div>
-              <p class="cont_right price"><span lang="en">286,760</span>원</p>
+              <a
+                href="../../domain/main/chart/chart_detail.html"
+                target="_blank"
+              >
+                <div class="cont_left">
+                  <span lang="en">22%</span>
+                  <p class="cate_name">생활용품</p>
+                </div>
+                <p class="cont_right price"><span lang="en">286,760</span>원</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -75,6 +85,16 @@
       console.log(nameList);
       console.log(priceList);
 
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var gradient = ctx.createLinearGradient(0, 0, 0, 200);
+      gradient.addColorStop(0, "#5399FF");
+      gradient.addColorStop(1, "#44E0C8");
+
+      var gradient2 = ctx.createLinearGradient(0, 0, 0, 330);
+      gradient2.addColorStop(0, "#E53E3E");
+      gradient2.addColorStop(0.5, "#E9503D");
+      gradient2.addColorStop(1, "#FFAB2E");
+
       const data = {
         labels: nameList,
         datasets: [
@@ -82,8 +102,8 @@
             label: "My First Dataset",
             data: priceList,
             backgroundColor: [
-              "rgb(255, 99, 132)",
-              "rgb(54, 162, 235)",
+              gradient,
+              gradient2,
               "rgb(255, 205, 86)",
               "rgb(255, 150, 86)",
             ],
