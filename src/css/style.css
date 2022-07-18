@@ -19,7 +19,10 @@
 .setting_wrap .set_button_wrap{ display: flex; flex-wrap: wrap;}
 .setting_wrap .set_button_wrap .sb_box{ margin: 0 4% 6% 0; padding: 50px 0 40px 0; display: flex; flex-direction: column; align-items: center; width: 48%; box-sizing: border-box; border-radius: 16px; cursor: pointer; background-color:#fff; box-shadow:0 6px 16px rgba(0,0,0,.2);}
 .setting_wrap .set_button_wrap .sb_box:nth-child(2n+0){ margin-right: 0;}
-.setting_wrap .set_button_wrap .sb_box .icon{ margin-bottom: 24px; background-color: #fcc;}
+.setting_wrap .set_button_wrap .sb_box .icon{ margin-bottom: 24px; width: 44px; height: 42px; background-repeat: no-repeat;}
+.setting_wrap .set_button_wrap .sb_box:nth-child(1) .icon{ background: url(../images/icon_set_goal.svg);}
+.setting_wrap .set_button_wrap .sb_box:nth-child(2) .icon{ background: url(../images/icon_set_category.svg);}
+.setting_wrap .set_button_wrap .sb_box:nth-child(3) .icon{ background: url(../images/icon_set_notice.svg);}
 .setting_wrap .set_button_wrap .sb_box .txt{ text-align: center;}
 
 /*===================차트 페이지===================*/
