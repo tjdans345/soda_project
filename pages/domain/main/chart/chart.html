@@ -85,6 +85,7 @@
       console.log(nameList);
       console.log(priceList);
 
+      // 차트.js 그라디언트 효과 넣는 부분 테스트 코드 (완료)
       var ctx = document.getElementById("myChart").getContext("2d");
       var gradient = ctx.createLinearGradient(0, 0, 0, 200);
       gradient.addColorStop(0, "#5399FF");
@@ -111,6 +112,21 @@
           },
         ],
       };
+      // 그라디언트 적용
+      //   datasets: [
+      //     {
+      //       label: "My First Dataset",
+      //       data: priceList,
+      //       backgroundColor: [
+      //         gradient,
+      //         gradient2,
+      //         "rgb(255, 205, 86)",
+      //         "rgb(255, 150, 86)",
+      //       ],
+      //       hoverOffset: 5,
+      //     },
+      //   ],
+      // };
 
       const config = {
         type: "doughnut",
