@@ -17,7 +17,10 @@
 
 /*===페이지 공통 타이틀 영역===*/
 .page_title_wrap{ margin-bottom:32px; text-align: center;}
-.page_title_wrap .main_title span{ margin-right: 3px; font-weight: 600;}
+.page_title_wrap .sub_title {font-weight: 500;}
+.page_title_wrap .sub_title > span{ font-size: 17px; font-weight: 600;}
+.page_title_wrap .main_title > span{ margin-right: 3px; font-weight: 600;}
+
 
 
 /*===================Color System===================*/
@@ -39,6 +42,10 @@
 .btn_check_over p:last-child{ border-radius: 0 6rem 6rem 0;}
 .btn_check_over p.active{color: #fff;}
 .btn_check_over p.active::after{display: none;}
+/*====Float 버튼====*/
+.float_button_wrap{ position: fixed; bottom: 16px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background-color: #5399FF; background-image: url(../images/icon_plus_white.svg); background-repeat: no-repeat; background-position: center;}
+
+
 /*===인풋버튼===*/
 /*인풋-요소*/
 input:focus{ border: 1px solid #5399FF; box-shadow: 0 0 0 1px #5399FF inset; box-sizing: border-box; color: #5399FF; font-weight: bold;}

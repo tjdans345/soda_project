@@ -5,8 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soda</title>
+    <link rel="stylesheet" href="../../../src/css/common.css">
+    <link rel="stylesheet" href="../../../src/css/reset.css">
+    <link rel="stylesheet" href="../../../src/css/style.css">
 </head>
 <body>
+    <div class="wrap">
+        <div class="main_wrap">
+            <div class="page_cont_top">
+                <div class="main_info_wrap">
+                    <p class="main_icon"><img src="../../../src/images/icon_soda_default.svg" alt="소다_디폴트"></p>
+                    <div class="page_title_wrap">
+                        <p class="sub_title"><span lang="en">6</span>월 지출내역입니다.</p>
+                        <h2 class="main_title title-24">
+                          <span lang="en" class="big-title-30">12,302,450</span>원
+                        </h2>
+                    </div>
+                </div><!--main_info_wrap-->
+                <div class="graph_explain_wrap flex">
+                    <div class="explain_left flex_column">
+                        <p>고정 지출</p>
+                        <span lang="en" class="title-18">243,560</span>
+                    </div>
+                    <div class="explain_right flex_column">
+                        <p>초과 지출</p>
+                        <span lang="en" class="title-18">+53,200</span>
+                    </div>
+                </div><!--graph_explain_wrap-->
+                <div class="notice_wrap">
+                    <div class="notice_box">
+                        <p>이번달 지출 목표의 <span lang="en">15%</span>를 초과했습니다!</p>
+                        <p> <strong lang="en">Wow!</strong> 지출 목표를 잘 지키고 계시군요!</p>
+                        <p class="display">지출 목표에 도달하기까지 <span lang="en">5%</span> 남았습니다!</p>
+                    </div>
+                    <div class="toggle_wrap">
+                        <p><span lang="en">6</span>월 소비 마감하기</p>
+                        <div class="button_toggle">(토글버튼)</div>
+                    </div>
+                </div>
+            </div><!--page_cont_top-->
+            <div class="devide_line"></div>
+            <div class="page_cont_bottom account_component_wrap">
+                <ul class="account_tab_wrap">
+                    <li class="active">전체 내역</li>
+                    <li>고정 지출</li>
+                    <li>초과 지출</li>
+                </ul>
+                <div class="account_list_wrap">
+                    <div class="date_wrap">
+                        <p class="date"><span lang="en">22</span>일</p>
+                        <p class="week">수요일</p>
+                    </div>
+                    <ul class="account_item_wrap">
+                        <li class="item_list">
+                            <p class="category_name">생활용품</p>
+                            <div class="item_name_wrap">
+                                <p class="item_name">다이소 정리함, 와인마개, 압축봉, 쟁반 15cm</p>
+                                <div class="item_explain_wrap">
+                                    <p class="payment">kb체크카드</p>
+                                    <p class="over">고정지출</p>
+                                </div>
+                            </div>
+                            <p class="price"><span lang="en">12,500</span>원</p>
+                        </li>
+                        <li class="item_list">
+                            <p class="category_name">식비</p>
+                            <div class="item_name_wrap">
+                                <p class="item_name">스타벅스 아메리카노</p>
+                                <div class="item_explain_wrap">
+                                    <p class="payment">수영구 재난카드</p>
+                                    <p class="over">초과지출</p>
+                                </div>
+                            </div>
+                            <p class="price"><span lang="en">4,500</span>원</p>
+                        </li>
+                    </ul>
+                </div> <!--account_list_wrap--(같은 날짜 묶음)-->
+                <div class="account_list_wrap">
+                    <div class="date_wrap">
+                        <p class="date"><span lang="en">21</span>일</p>
+                        <p class="week">화요일</p>
+                    </div>
+                    <ul class="account_item_wrap">
+                        <li class="item_list">
+                            <p class="category_name">정기결제</p>
+                            <div class="item_name_wrap">
+                                <p class="item_name">유튜브스트리밍</p>
+                                <div class="item_explain_wrap">
+                                    <p class="payment">kb체크카드</p>
+                                    <p class="over">고정지출</p>
+                                </div>
+                            </div>
+                            <p class="price"><span lang="en">11,900</span>원</p>
+                        </li>
+                        <li class="item_list">
+                            <p class="category_name">자취관련</p>
+                            <div class="item_name_wrap">
+                                <p class="item_name">월세</p>
+                                <div class="item_explain_wrap">
+                                    <p class="payment">현대카드</p>
+                                    <p class="over">초과지출</p>
+                                </div>
+                            </div>
+                            <p class="price"><span lang="en">450,000</span>원</p>
+                        </li>
+                        <li class="item_list">
+                            <p class="category_name">모임/회식/경조사비</p>
+                            <div class="item_name_wrap">
+                                <p class="item_name">텐퍼센트 아메리카노 5잔</p>
+                                <div class="item_explain_wrap">
+                                    <p class="payment">현대카드</p>
+                                    <p class="over">초과지출</p>
+                                </div>
+                            </div>
+                            <p class="price"><span lang="en">10,500</span>원</p>
+                        </li>
+                    </ul>
+                </div> <!--account_list_wrap--(같은 날짜 묶음)-->
+            </div><!--page_cont_bottom-->
+        </div><!--main_wrap-->
+        <button class="float_button_wrap"></button>
+    </div><!--wrap-->
     
 </body>
 </html>
