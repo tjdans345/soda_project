@@ -1,5 +1,6 @@
 export class PayObject {
   test = 0; // ES 최신문법 테스트
+  test2 = 1; // ES 최신문법 테스트
 
   constructor(category, name, price, isA) {
     this.category = category;
@@ -12,5 +13,6 @@ export class PayObject {
     console.log(this.category);
     console.log(this.price);
     console.log(this.test);
+    console.log(this.test2);
   }
 }
