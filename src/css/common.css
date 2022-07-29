@@ -96,3 +96,23 @@ textarea:focus{border: 1px solid #5399FF; box-shadow: 0 0 0 1px #5399FF inset; b
 .direction_close{ background: url(../images/icon_arrow_close.svg);}
 
 /*==========================Bottom_nav Page==========================*/
+.bottom_nav_wrap{ position: fixed; bottom: 0; left: 0; right: 0; height: 56px; border-top: 1px solid #eee;}
+.nav_list_wrap{ display: flex; width: 100%; height: 56px;}
+.nav_list_wrap .nav_list{ display: block; width: 33.333%; height: 100%; box-sizing: border-box; opacity: .8;}
+.nav_list_wrap .nav_list a{ padding-top: 8px; height: 100%; display: flex; flex-direction: column; align-items: center;}
+.nav_list_wrap .nav_list .nav_icon > p{ width: 24px; height: 24px; background-repeat: no-repeat; background-position: center; background-size: 100% auto;}
+.nav_list_wrap .nav_list:nth-child(3) .nav_icon{margin-left: 1.2px;}
+.nav_list_wrap .nav_list .nav_icon .active{display: none;}
+.nav_list_wrap .nav_list:nth-child(1) .nav_icon .default{ background-image: url(../images/icon_nav_main.svg);}
+.nav_list_wrap .nav_list:nth-child(1) .nav_icon .active{ background-image: url(../images/icon_nav_main_active.svg);}
+.nav_list_wrap .nav_list:nth-child(2) .nav_icon .default{ background-image: url(../images/icon_nav_chart.svg);}
+.nav_list_wrap .nav_list:nth-child(2) .nav_icon .active{ background-image: url(../images/icon_nav_chart_active.svg);}
+.nav_list_wrap .nav_list:nth-child(3) .nav_icon .default{ background-image: url(../images/icon_nav_setting.svg);}
+.nav_list_wrap .nav_list:nth-child(3) .nav_icon .active{ background-image: url(../images/icon_nav_setting_active.svg);}
+.nav_list_wrap .nav_list .name{  height: 12px; font-size: 11px; line-height: 12px; font-weight: 500; color: #5a5a5a;}
+
+/*navOnclick*/
+.nav_list_wrap .nav_list.on{opacity: 1;}
+.nav_list_wrap .nav_list.on .nav_icon .active{display: block;}
+.nav_list_wrap .nav_list.on .nav_icon .default{display: none;}
+.nav_list_wrap .nav_list.on .name{ color: #5399FF;}
