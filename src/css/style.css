@@ -34,6 +34,28 @@
 .modify_category_wrap >div{ margin-bottom: 16px;}
 .modify_category_wrap .button_wrap{ margin: 50px 0 30px 0;}
 
+
+
+/*===================월간소비 페이지===================*/
+.month_wrap{ padding-bottom: 60px;}
+.month_wrap > h2{ font-weight: 300; margin-bottom: 40px;}
+.month_wrap .years_select_wrap{ margin-bottom: 40px;}
+.month_wrap .years_select_wrap > p{ width: 24px; height: 24px; text-indent: -9999px; background-repeat: no-repeat; background-size: 24px auto; opacity: .3;}
+.month_wrap .years_select_wrap > p.on{opacity: 1;}
+.month_wrap .months_list_wrap{ flex-wrap: wrap;}
+.month_wrap .months_list_wrap .item{ width: 31%; margin: 24px 1%; box-sizing: border-box;}
+.month_wrap .months_list_wrap .item .state_icon_wrap{ margin-bottom: 12px;}
+.month_wrap .months_list_wrap .item .state_icon_wrap > div{ height: 140px; display: none;}
+.month_wrap .months_list_wrap .item .state_icon_wrap > div.on{ display: flex;}
+.month_wrap .months_list_wrap .item .state_icon_wrap .state_dim{ margin: 0 auto; justify-content: center; width: 86%; background-color: #fcfcfc; border: 2px dashed #eee; border-radius: 16px; cursor: pointer;}
+.month_wrap .months_list_wrap .item .state_icon_wrap .state_dim > img{ opacity: .6;}
+.month_wrap .months_list_wrap .item .state_icon_wrap .state_dim > p{ margin-top: 8px; font-size: 13px; text-align: center; color: #5a5a5a;}
+.month_wrap .months_list_wrap .item .text_wrap{ padding-left: 8px;}
+.month_wrap .months_list_wrap .item .text_wrap .month{ font-size: 13px;}
+.month_wrap .months_list_wrap .item .text_wrap .month span{ margin-right: 1px; font-size: 14px; font-weight: 600;}
+.month_wrap .months_list_wrap .item .text_wrap .price{ font-size: 14px;}
+.month_wrap .months_list_wrap .item .text_wrap .price span{ margin-right: 1px; font-size: 15px; font-weight: 600;}
+
 /*===================설정 페이지===================*/
 .setting_wrap{}
 .setting_wrap .set_bg{ z-index: -2; position: absolute; top: -80px; right: -90px; width: 240px; height: 240px; background: url(../images/img_bg_setting.svg) no-repeat; background-size: contain;}
@@ -46,6 +68,8 @@
 .setting_wrap .set_button_wrap .sb_box:nth-child(2) .icon{ background: url(../images/icon_set_category.svg);}
 .setting_wrap .set_button_wrap .sb_box:nth-child(3) .icon{ background: url(../images/icon_set_notice.svg);}
 .setting_wrap .set_button_wrap .sb_box .txt{ text-align: center;}
+
+
 
 /*===================차트 페이지===================*/
 .chart_page_wrap{ padding-top: 8px; background-color: #f5f5f5;}
