@@ -43,7 +43,7 @@
 .btn_check_over p.active{color: #fff;}
 .btn_check_over p.active::after{display: none;}
 /*====Float 버튼====*/
-.float_button_wrap{ position: fixed; bottom: 16px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background-color: #5399FF; background-image: url(../images/icon_plus_white.svg); background-repeat: no-repeat; background-position: center;}
+.float_button_wrap{ position: fixed; bottom: 72px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background-color: #5399FF; background-image: url(../images/icon_plus_white.svg); background-repeat: no-repeat; background-position: center;}
 
 
 /*===인풋버튼===*/
@@ -94,9 +94,10 @@ textarea:focus{border: 1px solid #5399FF; box-shadow: 0 0 0 1px #5399FF inset; b
 .direction_icon{ margin-right: 8px; background: url(../images/icon_arrow_close.svg) no-repeat; }
 .direction_back{ background: url(../images/icon_arrow_back.svg);}
 .direction_close{ background: url(../images/icon_arrow_close.svg);}
+.direction_next{ background: url(../images/icon_arrow_next.svg);}
 
 /*==========================Bottom_nav Page==========================*/
-.bottom_nav_wrap{ position: fixed; bottom: 0; left: 0; right: 0; height: 56px; border-top: 1px solid #eee;}
+.bottom_nav_wrap{ position: fixed; bottom: 0; left: 0; right: 0; height: 56px; border-top: 1px solid #eee; background-color: #fff;}
 .nav_list_wrap{ display: flex; width: 100%; height: 56px;}
 .nav_list_wrap .nav_list{ display: block; width: 33.333%; height: 100%; box-sizing: border-box; opacity: .8;}
 .nav_list_wrap .nav_list a{ padding-top: 8px; height: 100%; display: flex; flex-direction: column; align-items: center;}

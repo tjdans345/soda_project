@@ -14,7 +14,7 @@
         <div class="main_wrap">
             <div class="page_cont_top">
                 <div class="main_info_wrap">
-                    <p class="main_icon"><img src="../../../src/images/icon_soda_default.svg" alt="소다_디폴트"></p>
+                    <p class="main_icon"><img src="../../../src/images/icon_soda_good.svg" alt="소다_디폴트"></p>
                     <div class="page_title_wrap">
                         <p class="sub_title"><span lang="en">6</span>월 지출내역입니다.</p>
                         <h2 class="main_title title-24">
@@ -22,7 +22,7 @@
                         </h2>
                     </div>
                 </div><!--main_info_wrap-->
-                <div class="graph_explain_wrap flex">
+                <div class="graph_explain_wrap flex" onclick="location.href='chart/chart.html'">
                     <div class="explain_left flex_column">
                         <p>고정 지출</p>
                         <span lang="en" class="title-18">243,560</span>
@@ -124,7 +124,32 @@
                 </div> <!--account_list_wrap--(같은 날짜 묶음)-->
             </div><!--page_cont_bottom-->
         </div><!--main_wrap-->
-        <button class="float_button_wrap"></button>
+        <button class="float_button_wrap" onclick="location.href='account/write_account.html'"></button>
+        <footer class="bottom_nav_wrap">
+            <ul class="nav_list_wrap">
+                <li class="nav_list flex_column on"><a href="#">
+                   <div class="nav_icon">
+                       <p class="default"></p>
+                       <p class="active"></p>
+                   </div>
+                   <p class="name">메인</p>
+                </a></li>
+                <li class="nav_list flex_column"><a href="../month/month.html">
+                   <div class="nav_icon">
+                       <p class="default"></p>
+                       <p class="active"></p>
+                   </div>
+                   <p class="name">월간소비</p>
+                </a></li>
+                <li class="nav_list flex_column"><a href="../setting/setting.html">
+                   <div class="nav_icon">
+                       <p class="default"></p>
+                       <p class="active"></p>
+                   </div>
+                   <p class="name">설정</p>
+                </a></li>
+            </ul>
+        </footer>
     </div><!--wrap-->
     
 </body>

@@ -21,6 +21,8 @@
 .main_wrap .notice_wrap .toggle_wrap{ display: flex; justify-content: flex-end; align-items: center;}
 .main_wrap .notice_wrap .toggle_wrap > p{ margin-right: 6px; font-size: 12px; color: #5a5a5a;}
 .main_wrap .notice_wrap .toggle_wrap > p > span{ font-weight: 600;}
+.main_wrap .notice_wrap .toggle_wrap .button_toggle{ position: relative; width: 46px; height: 26px; text-indent: -9999px; border: 2px solid #eee; border-radius: 100px; cursor: pointer;}
+.main_wrap .notice_wrap .toggle_wrap .button_toggle::after{ position: absolute; top: 2px; left: 3px; content: ""; clear: both; display: block; width: 18px; height: 18px; border-radius: 50%; background-color: #eee;}
 
 .main_wrap .devide_line{ width: 100%; height: 10px; background-color: #F7F9FB;}
 .main_wrap .page_cont_bottom{ padding: 32px 20px;}
@@ -100,7 +102,7 @@
 .chart_detail_wrap .page_cont_bottom{ margin-top: 50px; padding: 32px 20px; background-color: #fff; border-radius: 16px 16px 0 0;}
 
 /*----고정지출/초과지출 display 공통 컴포넌트----*/
-.graph_explain_wrap{  padding: 24px 0; border-radius: 16px; background-color: #fff; box-shadow:0 6px 16px rgba(0,0,0,.2);}
+.graph_explain_wrap{  padding: 24px 0; border-radius: 16px; background-color: #fff; box-shadow:0 6px 16px rgba(0,0,0,.2); cursor: pointer;}
 .graph_explain_wrap > div{ position: relative; width: 50%;}
 .graph_explain_wrap > div > p { margin-bottom: 4px; font-size: 14px; font-weight: 500;}
 .graph_explain_wrap > div > span{ font-weight: 600;} 
