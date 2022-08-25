@@ -29,6 +29,8 @@
                 name="year"
                 type="text"
                 placeholder="년"
+                onfocus="this.placeholder=''"
+                onblur="this.placeholder='년'"
                 class="input-center"
               />
             </li>
@@ -65,8 +67,8 @@
           />
           <div class="button_wrap">
                 <div class="btn_check_over">
-                    <p class="active gradient_main">고정 지출</p>
-                    <p>초과 지출</p>
+                    <p class="btn_check_over_item">고정 지출</p>
+                    <p class="btn_check_over_item on">초과 지출</p>
                 </div>
             </div>
         </div>
@@ -93,11 +95,13 @@
         <div class="input_wrap">
           <p class="sub-title-16">카테고리</p>
           <input
+            class="openModal"
             name="category"
             type="text"
             placeholder="결제내역 카테고리를 입력하세요."
             onfocus="this.placeholder=''"
             onblur="this.placeholder='결제내역 카테고리를 입력하세요.'"
+            onclick="openModal()"
           />
         </div>
         <div class="input_wrap">
@@ -113,7 +117,7 @@
           ></textarea>
         </div>
         <div class="button_wrap">
-          <button class="btn_main">등록하기</button>
+          <button class="btn_main" onclick="location.href='../main.html'">등록하기</button>
         </div>
       </div>
 
@@ -159,11 +163,12 @@
         </div>
         <div class="modal_bottom">
           <div class="button_wrap">
-            <button class="btn_main">선택하기</button>
+            <button class="btn_main" onclick="closeModal()">선택하기</button>
           </div>
         </div>
       </div>
-      <div class="bg"></div>
+      <div class="bg" onclick="closeModal()"></div>
     </div>
+  <script src="../../../../src/js/common/main.js"></script>
   </body>
 </html>

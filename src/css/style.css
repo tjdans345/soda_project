@@ -5,6 +5,24 @@
 .page_wrap{ padding: 32px 20px 0;}
 
 
+/*====================로딩 페이지====================*/
+.loading_wrap{ height: 100vh; padding: 4rem; background-color: #5399FF;}
+.loading_wrap .title_wrap{ position: relative; padding-left: 46px;}
+.loading_wrap .title_wrap::before{ position: absolute; left: 0; top: 2px; content: ""; display: block; clear: both; width: 2rem; height: 2rem; border-radius: 50%; background-color: #fff;}
+.loading_wrap .title_wrap >p{color: #fff;}
+.loading_wrap .title_wrap >p:first-child{ font-weight: 200;}
+.loading_wrap .title_wrap >p:last-child{ font-size: 44px; line-height: 52px; font-weight: 700;}
+.loading_wrap .cont_wrap{ position: fixed; top: 50%; left: 50%; transform: translate(-50%,-35%);}
+.loading_wrap .cont_wrap .visual_wrap{ position: relative;}
+.loading_wrap .cont_wrap .visual_wrap span{ position: absolute; display: block; border-radius: 50%; background-color: rgba(255,255,255,.2);}
+.loading_wrap .cont_wrap .visual_wrap .bubble01{ animation:ani01 2s ease-in-out infinite alternate; top: -20px; left: 30px; width: 20px; height: 20px;}
+.loading_wrap .cont_wrap .visual_wrap .bubble02{ animation:ani02 3s ease-in-out infinite alternate; top: -80px; right: 60px; width: 50px; height: 50px;}
+.loading_wrap .cont_wrap .visual_wrap .bubble03{ animation:ani01 3s ease-in-out infinite alternate; top: -10px; right: 30px; width: 28px; height: 28px;}
+
+.loading_wrap .cont_wrap .start_button{ margin-top: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer;}
+.loading_wrap .cont_wrap .start_button p{ margin-right: 8px; color: #fff;}
+.loading_wrap .cont_wrap .start_button span{ margin-top: 1px; width: 20px; height: 20px; background-image:url(../images/icon_arrow_circle_next.svg); background-repeat: no-repeat; background-size: 20px auto;}
+
 
 
 /*====================메인 페이지====================*/
@@ -22,14 +40,18 @@
 .main_wrap .notice_wrap .toggle_wrap > p{ margin-right: 6px; font-size: 12px; color: #5a5a5a;}
 .main_wrap .notice_wrap .toggle_wrap > p > span{ font-weight: 600;}
 .main_wrap .notice_wrap .toggle_wrap .button_toggle{ position: relative; width: 46px; height: 26px; text-indent: -9999px; border: 2px solid #eee; border-radius: 100px; cursor: pointer;}
-.main_wrap .notice_wrap .toggle_wrap .button_toggle::after{ position: absolute; top: 2px; left: 3px; content: ""; clear: both; display: block; width: 18px; height: 18px; border-radius: 50%; background-color: #eee;}
+.main_wrap .notice_wrap .toggle_wrap .button_toggle::after{ transition: all .4s ease ; position: absolute; top: 2px; left: 3px; content: ""; clear: both; display: block; width: 18px; height: 18px; border-radius: 50%; background-color: #eee;}
+
+.main_wrap .notice_wrap .toggle_wrap .button_toggle.on{border: 2px solid #5399FF;}
+.main_wrap .notice_wrap .toggle_wrap .button_toggle.on::after{  transform: translateX(18px); background-color: #5399FF;}
+
 
 .main_wrap .devide_line{ width: 100%; height: 10px; background-color: #F7F9FB;}
 .main_wrap .page_cont_bottom{ padding: 32px 20px;}
 
 
 /*=================가계부 작성 페이지=================*/
-.write_account_wrap{}
+.write_account_wrap .button_wrap{ padding-bottom: 20px;}
 
 /*================카테고리 수정 페이지================*/
 .modify_category_wrap{}

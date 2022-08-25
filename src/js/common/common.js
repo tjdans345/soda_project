@@ -1,3 +1,5 @@
+
 let inputEle = document.getElementsByTagName('input');
-console.log(inputEle);
+// console.log(inputEle);
+
 
